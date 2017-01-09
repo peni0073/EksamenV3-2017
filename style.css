@@ -1,0 +1,97 @@
+/* line 3, C:/Users/peni0073/Desktop/Eksamen Januar 2017/Islaendere i DK/css/style.scss */
+body {
+  background: #eee; }
+
+/* line 8, C:/Users/peni0073/Desktop/Eksamen Januar 2017/Islaendere i DK/css/style.scss */
+h1 {
+  font-size: 3.5em;
+  text-align: center; }
+
+/* line 14, C:/Users/peni0073/Desktop/Eksamen Januar 2017/Islaendere i DK/css/style.scss */
+header {
+  background: #FFC63C;
+  padding: 20px; }
+  /* line 19, C:/Users/peni0073/Desktop/Eksamen Januar 2017/Islaendere i DK/css/style.scss */
+  header ul {
+    display: block;
+    display: flex;
+    padding: 0;
+    margin: 20px; }
+    /* line 25, C:/Users/peni0073/Desktop/Eksamen Januar 2017/Islaendere i DK/css/style.scss */
+    header ul li {
+      display: inline;
+      flex-basis: 10%; }
+      /* line 29, C:/Users/peni0073/Desktop/Eksamen Januar 2017/Islaendere i DK/css/style.scss */
+      header ul li a {
+        color: #041B87; }
+        /* line 32, C:/Users/peni0073/Desktop/Eksamen Januar 2017/Islaendere i DK/css/style.scss */
+        header ul li a:hover {
+          color: #062ad1;
+          text-decoration: underline; }
+  /* line 40, C:/Users/peni0073/Desktop/Eksamen Januar 2017/Islaendere i DK/css/style.scss */
+  header .userLogin {
+    background-color: black; }
+
+/* line 45, C:/Users/peni0073/Desktop/Eksamen Januar 2017/Islaendere i DK/css/style.scss */
+.inputLogin {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  background-color: #faffbd;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; }
+
+/* line 62, C:/Users/peni0073/Desktop/Eksamen Januar 2017/Islaendere i DK/css/style.scss */
+.col-pad {
+  padding-left: 5px;
+  padding-right: 5px; }
+
+/* line 67, C:/Users/peni0073/Desktop/Eksamen Januar 2017/Islaendere i DK/css/style.scss */
+main {
+  margin: 25px auto;
+  width: 80%;
+  height: 1500px;
+  padding: 25px;
+  background: #fff;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column; }
+
+/* line 79, C:/Users/peni0073/Desktop/Eksamen Januar 2017/Islaendere i DK/css/style.scss */
+article {
+  width: calc(25% - 10px);
+  box-sizing: border-box;
+  background: #e0ddd5;
+  color: #171e42;
+  padding: 10px;
+  margin-left: 10px;
+  margin-top: 10px; }
+
+/* line 89, C:/Users/peni0073/Desktop/Eksamen Januar 2017/Islaendere i DK/css/style.scss */
+footer {
+  padding: 25px;
+  background: #FFC63C; }
+  /* line 93, C:/Users/peni0073/Desktop/Eksamen Januar 2017/Islaendere i DK/css/style.scss */
+  footer img {
+    width: 8%; }
+
+/* line 100, C:/Users/peni0073/Desktop/Eksamen Januar 2017/Islaendere i DK/css/style.scss */
+.row-footer {
+  margin: 0 auto;
+  width: 80%; }
+
+/* line 105, C:/Users/peni0073/Desktop/Eksamen Januar 2017/Islaendere i DK/css/style.scss */
+.col-center {
+  text-align: center;
+  border-right: 1px solid #041B87; }
+
+/*# sourceMappingURL=style.css.map */
