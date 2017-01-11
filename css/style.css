@@ -1,378 +1,258 @@
-/* line 3, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
+/* BODY CSS START */
 body {
-  background: #eee;
-  font-family: "Raleway", sans-serif; }
+    background-color: #efeae2;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+}
 
-/* line 8, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
+/* HEADER AND FOOTER CSS COLOR START */
+h1, h2, h3, h4, h5, h6, footer {
+    color: #041b87;
+}
+
 h1 {
-  text-align: center; }
+    text-align: center;
+}
 
-/* line 13, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-header {
-  background: #FFC63C;
-  padding: 20px; }
-  /* line 17, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-  header img {
+h2 {
+    color: white;
+}
+
+h4 {
+    color: #bbb;
+    font-style: italic;
+}
+
+hr { 
+    border-top: dashed 2px;
+}
+
+p {
+    padding-top: 20px;
+}
+
+img { 
     width: 100%;
-    height: auto; }
-  /* line 22, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-  header ul {
-    display: block;
+    height: auto;
+}
+
+/* CONTAINER CSS START */
+.container {
+    width: 95%;
+}
+
+/* HEADER CSS START */
+header {
+    background-color: #ffc63c;
+}
+
+
+/* NAV CSS START */
+.nav {
+    color: #041b87;
     display: flex;
-    padding: 0;
-    margin: 20px 0px 20px 10%; }
-    /* line 28, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-    header ul li {
-      display: inline;
-      flex-basis: 10%; }
-      /* line 32, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-      header ul li a {
-        color: #041B87;
-        font-weight: bold; }
-        /* line 36, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-        header ul li a:hover {
-          color: #062ad1;
-          text-decoration: underline; }
-  /* line 44, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-  header .login-register {
-    padding: 10px; }
-  /* line 48, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-  header .userLogin {
-    background-color: black; }
-  /* line 54, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-  header .inputLogin {
-    display: block;
+}
+.nav > li > a {
+    font-weight: bold;
+    color: #041b87;
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+    color: #0835ff;
+    transition: ease-in-out .5s;
+    text-decoration: underline;
+    background: none;
+}
+
+/* SEARCH CSS START */
+.col-sm-3 {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+/* LOGIN BOX CSS START */
+.inputLogin {
+    display: block;    
     width: 100%;
     height: 34px;
     padding: 6px 12px;
     font-size: 14px;
     line-height: 1.42857143;
-    background-color: #faffbd;
     border: 1px solid #ccc;
     border-radius: 4px;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
     -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
     -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; }
-  /* line 71, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-  header .col-pad {
-    padding-left: 5px;
-    padding-right: 5px; }
+       transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
 
-/* MAIN START */
-/* line 79, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
+#user {
+    background-color: #faffbd;
+}
+
+#pass {
+    background-color: #faffbd;
+}
+
+/* REGISTER LINK CSS START*/
+.register {
+    text-align: right;
+    color: #041b87;
+    padding-bottom: 20px;
+}
+
+.register h5 {
+    color: black;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.register a {
+    margin-left: 15px;
+}
+
+.register a:hover {
+    text-decoration: none;
+}
+
+/* MAIN CSS START */
 main {
-  margin: 25px auto;
-  width: 80%;
-  padding: 20px;
-  background: #fff;
-  border-radius: 5px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  height: 1400px; }
-  /* line 90, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-  main a {
-    width: 23%;
-    margin: 5px 0px;
-    color: #000;
+    padding: 50px;
+}
+
+.row-main {
+    background-color: white;
+}
+
+.articleBox {    
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px;
+    color: #fff;            
+    text-align: center;   
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.box1 {
+    background: #d7944d;
+}
+
+.box2 {
+    background: #77d1ef;
+}
+
+.box3 {
+    background: #4d8ea3;
+}
+
+.box4 {
+    background: #ffa84d;
+}
+
+main a {
+    padding: 20px;
+    color: black;
     opacity: .7;
     transition: opacity .5s ease-out;
-    -moz-transition: opacity .5s ease-out;
+    -moz-   transition: opacity .5s ease-out;
     -webkit-transition: opacity .5s ease-out;
-    -o-transition: opacity .5s ease-out; }
-    /* line 100, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-    main a:hover {
-      text-decoration: none;
-      color: #000;
-      box-shadow: 1px 1px 5px 5px #eee;
-      -webkit-transition: all 1s ease;
-      -moz-transition: all 1s ease;
-      -o-transition: all 1s ease;
-      -ms-transition: all 1s ease;
-      transition: all 1s ease;
-      opacity: 1; }
-    /* line 112, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-    main a .articleBox {
-      padding: 30px;
-      color: #fff;
-      text-align: center;
-      border-radius: 10px;
-      font-weight: bold; }
-      /* line 119, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-      main a .articleBox .fa {
-        font-size: 2.5em; }
-    /* line 126, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-    main a .box1 {
-      background: #d7944d; }
-    /* line 130, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-    main a .box2 {
-      background: #77d1ef; }
-    /* line 134, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-    main a .box3 {
-      background: #4d8ea3; }
-    /* line 138, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-    main a .box4 {
-      background: #ffa84d; }
-    /* line 142, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-    main a article {
-      padding: 10px; }
-      /* line 145, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-      main a article img {
-        width: 100%;
-        height: auto; }
+    -o-     transition: opacity .5s ease-out;
+}
 
-/* MAIN END */
-/* line 155, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
+main a:hover {
+    text-decoration: none;
+    color: black;
+    opacity: 1;
+}
+
+
+.article-form {
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+.form-group {
+}
+
+.sponserBox {
+    width: 100%;
+    font-size: 1.5em;
+    background: #f5f5f5;
+    margin-top: 20px;
+    padding: 10px;
+    border: 2px solid #e3e3e3;
+    text-align: center;   
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+aside img {
+    width: 100%;
+    border: 2px solid #eee;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+/* FOOTER CSS START */
 footer {
-  padding: 25px;
-  background: #FFC63C;
-  color: #041B87;
-  font-weight: bold; }
-  /* line 161, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-  footer .row-footer {
+    background-color: #ffc63c;
+    padding: 25px;
+    font-weight: bold;
+}
+
+footer img {
+    width: 10%;
+}
+
+.row-footer {
     margin: 0 auto;
-    width: 80%; }
-    /* line 165, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-    footer .row-footer .col-center {
-      text-align: center;
-      border-right: 1px solid #041B87; }
-  /* line 172, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-  footer img {
-    width: 8%; }
+    width: 80%;
+}
 
+.col-center {
+    text-align: center;
+    border-right: 1px solid #041B87;
+}
+
+
+
+
+/* MEDIA QUERIE MOBIL START */
 @media screen and (min-width: 320px) {
-  /* line 178, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-  body {
-    background-color: lightgreen; }
-  /* line 182, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-  header {
-    background: #FFC63C;
-    padding: 20px; }
-    /* line 186, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-    header img {
-      width: 100%;
-      height: auto; }
-    /* line 191, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-    header ul {
-      display: block;
-      display: flex;
-      padding: 0;
-      margin: 20px; }
-      /* line 197, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-      header ul li {
-        display: inline;
-        flex-basis: 50%; }
-        /* line 201, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-        header ul li a {
-          color: #041B87;
-          font-weight: bold; }
-          /* line 205, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-          header ul li a:hover {
-            color: #062ad1;
-            text-decoration: underline; }
-    /* line 214, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-    header .userLogin {
-      background-color: black; }
-  /* line 220, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-  .input-group {
-    margin-bottom: 15px; }
-  /* line 224, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-  .inputLogin {
-    margin-bottom: 5px; }
-  /* line 228, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-  main {
-    margin: 25px auto;
-    width: 80%;
-    padding: 20px;
-    background: #fff;
-    border-radius: 5px;
-    display: inline-block;
-    flex-wrap: wrap;
-    flex-direction: column;
-    height: auto; }
-    /* line 239, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-    main a {
-      width: 100%;
-      margin: 5px 0px;
-      color: #000;
-      opacity: .7;
-      transition: opacity .5s ease-out;
-      -moz-transition: opacity .5s ease-out;
-      -webkit-transition: opacity .5s ease-out;
-      -o-transition: opacity .5s ease-out; }
-      /* line 249, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-      main a:hover {
-        text-decoration: none;
-        color: #000;
-        box-shadow: 1px 1px 5px 5px #eee;
-        -webkit-transition: all 1s ease;
-        -moz-transition: all 1s ease;
-        -o-transition: all 1s ease;
-        -ms-transition: all 1s ease;
-        transition: all 1s ease;
-        opacity: 1; }
-      /* line 261, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-      main a .articleBox {
-        padding: 30px;
-        color: #fff;
+    
+    footer p {
+        display: block;
+        padding: 10px;
         text-align: center;
-        border-radius: 10px;
-        font-weight: bold; }
-        /* line 268, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-        main a .articleBox .fa {
-          font-size: 2.5em; }
-      /* line 275, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-      main a .box1 {
-        background: #d7944d; }
-      /* line 279, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-      main a .box2 {
-        background: #77d1ef; }
-      /* line 283, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-      main a .box3 {
-        background: #4d8ea3; }
-      /* line 287, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-      main a .box4 {
-        background: #ffa84d; }
-      /* line 291, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-      main a article {
-        padding: 10px; }
-        /* line 294, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-        main a article img {
-          width: 100%;
-          height: auto; } }
+    }
+    
+    .col-center {
+        text-align: center;
+        border-right: none;
+    }
+    
+}
 
+/* MEDIA QUERIE TABLET START */
 @media screen and (min-width: 768px) {
-  /* line 304, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-  body {
-    background-color: pink; }
-  /* line 308, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-  main {
-    margin: 25px auto;
-    width: 80%;
-    padding: 20px;
-    background: #fff;
-    border-radius: 5px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    height: 1400px; }
-    /* line 319, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-    main a {
-      width: 23%;
-      margin: 5px 0px;
-      color: #000;
-      opacity: .7;
-      transition: opacity .5s ease-out;
-      -moz-transition: opacity .5s ease-out;
-      -webkit-transition: opacity .5s ease-out;
-      -o-transition: opacity .5s ease-out; }
-      /* line 329, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-      main a:hover {
-        text-decoration: none;
-        color: #000;
-        box-shadow: 1px 1px 5px 5px #eee;
-        -webkit-transition: all 1s ease;
-        -moz-transition: all 1s ease;
-        -o-transition: all 1s ease;
-        -ms-transition: all 1s ease;
-        transition: all 1s ease;
-        opacity: 1; }
-      /* line 341, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-      main a .articleBox {
-        padding: 30px;
-        color: #fff;
-        text-align: center;
-        border-radius: 10px;
-        font-weight: bold; }
-        /* line 348, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-        main a .articleBox .fa {
-          font-size: 2.5em; }
-      /* line 355, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-      main a .box1 {
-        background: #d7944d; }
-      /* line 359, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-      main a .box2 {
-        background: #77d1ef; }
-      /* line 363, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-      main a .box3 {
-        background: #4d8ea3; }
-      /* line 367, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-      main a .box4 {
-        background: #ffa84d; }
-      /* line 371, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-      main a article {
-        padding: 10px; }
-        /* line 374, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-        main a article img {
-          width: 100%;
-          height: auto; } }
 
+    
+    .col-center {
+        text-align: center;
+        border-right: 1px solid #041B87;
+    }
+    
+    .sponserBox {
+        font-size: 1.0em;
+    }
+}
+
+/* MEDIA QUERIE LAPTOP START */
 @media screen and (min-width: 1024px) {
-  /* line 384, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-  body {
-    background-color: orange; }
-  /* line 388, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-  main {
-    margin: 25px auto;
-    width: 80%;
-    padding: 20px;
-    background: #fff;
-    border-radius: 5px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    height: 1400px; }
-    /* line 399, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-    main a {
-      width: 23%;
-      margin: 5px 0px;
-      color: #000;
-      opacity: .7;
-      transition: opacity .5s ease-out;
-      -moz-transition: opacity .5s ease-out;
-      -webkit-transition: opacity .5s ease-out;
-      -o-transition: opacity .5s ease-out; }
-      /* line 409, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-      main a:hover {
-        text-decoration: none;
-        color: #000;
-        box-shadow: 1px 1px 5px 5px #eee;
-        -webkit-transition: all 1s ease;
-        -moz-transition: all 1s ease;
-        -o-transition: all 1s ease;
-        -ms-transition: all 1s ease;
-        transition: all 1s ease;
-        opacity: 1; }
-      /* line 421, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-      main a .articleBox {
-        padding: 30px;
-        color: #fff;
-        text-align: center;
-        border-radius: 10px;
-        font-weight: bold; }
-        /* line 428, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-        main a .articleBox .fa {
-          font-size: 2.5em; }
-      /* line 435, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-      main a .box1 {
-        background: #d7944d; }
-      /* line 439, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-      main a .box2 {
-        background: #77d1ef; }
-      /* line 443, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-      main a .box3 {
-        background: #4d8ea3; }
-      /* line 447, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-      main a .box4 {
-        background: #ffa84d; }
-      /* line 451, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-      main a article {
-        padding: 10px; }
-        /* line 454, C:/xampp/htdocs/islaendereidk/EksamenV3-2017/css/style.scss */
-        main a article img {
-          width: 100%;
-          height: auto; } }
-
-/*# sourceMappingURL=style.css.map */
+    .sponserBox {
+        font-size: 1.5em;
+    }
+}
